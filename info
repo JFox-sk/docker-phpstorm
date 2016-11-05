@@ -1,0 +1,7 @@
+docker build --rm -t phpstorm .
+
+
+docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/WWW-JFox/CodeCamp/.PhpStorm2016.2:/home/soft-len-sub/.PhpStorm2016.2 -v ~/WWW-JFox/CodeCamp/project:/workspace --name phpstorm phpstorm
+
+
+docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/WWW-JFox/CodeCamp/.PhpStorm2016.2:/home/soft-len-sub/.PhpStorm2016.2 -v ~/WWW-JFox/CodeCamp/project:/workspace --name phpstorm phpstorm
